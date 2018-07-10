@@ -6,34 +6,34 @@
   </head>
   <body>
     <div class="box">
-      <div class="left-top" style="display-block">11111</div>
+      <div class="left-top" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-      <div class="mid-top" style="display-block">11111</div>
+      <div class="mid-top" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-        <div class="right-top" style="display-block">11111</div>
+        <div class="right-top" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-        <div class="left-top" style="display-block">11111</div>
+        <div class="left-top" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-      <div class="left-mid" style="display-block">11111</div>
+      <div class="left-mid" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-      <div class="mig-mid" style="display-block">11111</div>
+      <div class="mig-mid" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-      <div class="right-mid" style="display-block">11111</div>
+      <div class="right-mid" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-      <div class="left-bom" style="display-block">11111</div>
+      <div class="left-bom" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-      <div class="mid-bom" style="display-block">11111</div>
+      <div class="mid-bom" style="display:block">test<br/>test<br/>test</div>
     </div>
     <div class="box">
-      <div class="right-bom" style="display-block">11111</div>
+      <div class="right-bom" style="display:block">test<br/>test<br/>test</div>
     </div>
   </body>
 </html>
@@ -41,6 +41,7 @@
 /** ------- **/
 body,ul,li{margin:0;padding:0;}
 .box{
+  position:absolute;
   margin-top:50px;
   margin-left: 50px;
   margin-right: 50px;
@@ -50,19 +51,17 @@ body,ul,li{margin:0;padding:0;}
    background-color: #f0f0f0;
 }
 .left-top{
+  position:inherit;
   width: 200px;
   height: 200px;
   margin-top:100px;
- vertical-align: top;
  text-align:left;
- float:inherit;
 }
 
 .mid-top{
   width: 200px;
   height: 200px;
   margin-top:100px;
- vertical-align: top;
  text-align: center;
  background-color:  #f0f0f0;
 }
@@ -71,7 +70,6 @@ body,ul,li{margin:0;padding:0;}
   width: 200px;
   height: 200px;
   margin-top:100px;
- vertical-align: top;
  text-align: right;
  background-color:  #f0f0f0;
 }
@@ -80,7 +78,6 @@ body,ul,li{margin:0;padding:0;}
   width: 200px;
   height: 200px;
   margin-top:100px;
- vertical-align: middle;
  text-align: left;
  background-color:  #f0f0f0;
 }
@@ -89,7 +86,6 @@ body,ul,li{margin:0;padding:0;}
   width: 200px;
   height: 200px;
   margin-top:100px;
- vertical-align: middle;
  text-align: center;
  background-color:  #f0f0f0;
 }
@@ -98,7 +94,6 @@ body,ul,li{margin:0;padding:0;}
   width: 200px;
   height: 200px;
   margin-top:100px;
- vertical-align: middle;
  text-align: right;
  background-color:  #f0f0f0;
 }
