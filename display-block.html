@@ -2,99 +2,90 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>display-block</title>
+    <style type="text/css">
+    /** ------- **/
+    body>div{
+      outline: solid blue;
+    }
+    body>div>div{
+      outline: solid red;
+    }
+    .box{
+       width: 300px;
+       height: 300px;
+       overflow: auto;
+    }
+    .left-top{
+      width: 200px;
+      height: 200px;
+      margin-top: 2px;
+      margin-left: 2px;
+    }
+
+    .mid-top{
+      width: 200px;
+      height: 200px;
+      margin-top: 2px;
+      margin-left: 33.33px;
+    }
+
+    .right-top{
+      width: 200px;
+      height: 200px;
+      margin-top: 2px;
+      margin-right: 2px;
+      margin-left: auto;
+    }
+
+    .left-mid{
+      width: 200px;
+      height: 200px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    .mid-mid{
+      width: 200px;
+      height: 200px;
+      margin-top:100px;
+    }
+
+    .right-mid{
+      width: 200px;
+      height: 200px;
+      margin-top:100px;
+    }
+    </style>
   </head>
   <body>
     <div class="box">
-      <div class="left-top" style="display:block">test<br/>test<br/>test</div>
+      <div class="left-top" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
     <div class="box">
-      <div class="mid-top" style="display:block">test<br/>test<br/>test</div>
+      <div class="mid-top" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
     <div class="box">
-        <div class="right-top" style="display:block">test<br/>test<br/>test</div>
+        <div class="right-top" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
     <div class="box">
-        <div class="left-top" style="display:block">test<br/>test<br/>test</div>
+      <div class="left-mid" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
     <div class="box">
-      <div class="left-mid" style="display:block">test<br/>test<br/>test</div>
+      <div class="mig-mid" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
     <div class="box">
-      <div class="mig-mid" style="display:block">test<br/>test<br/>test</div>
+      <div class="right-mid" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
     <div class="box">
-      <div class="right-mid" style="display:block">test<br/>test<br/>test</div>
+      <div class="left-bom" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
     <div class="box">
-      <div class="left-bom" style="display:block">test<br/>test<br/>test</div>
+      <div class="mid-bom" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
     <div class="box">
-      <div class="mid-bom" style="display:block">test<br/>test<br/>test</div>
-    </div>
-    <div class="box">
-      <div class="right-bom" style="display:block">test<br/>test<br/>test</div>
+      <div class="right-bom" style="display:block">Lorem ipsum dolor sit amet, consecte</div>
     </div>
   </body>
 </html>
-<style type="text/css">
-/** ------- **/
-body,ul,li{margin:0;padding:0;}
-.box{
-  position:absolute;
-  margin-top:50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  margin-bottom: : 50px;
-   width: 300px;
-   height: 300px;
-   background-color: #f0f0f0;
-}
-.left-top{
-  position:inherit;
-  width: 200px;
-  height: 200px;
-  margin-top:100px;
- text-align:left;
-}
-
-.mid-top{
-  width: 200px;
-  height: 200px;
-  margin-top:100px;
- text-align: center;
- background-color:  #f0f0f0;
-}
-
-.right-top{
-  width: 200px;
-  height: 200px;
-  margin-top:100px;
- text-align: right;
- background-color:  #f0f0f0;
-}
-
-.left-mid{
-  width: 200px;
-  height: 200px;
-  margin-top:100px;
- text-align: left;
- background-color:  #f0f0f0;
-}
-
-.mid-mid{
-  width: 200px;
-  height: 200px;
-  margin-top:100px;
- text-align: center;
- background-color:  #f0f0f0;
-}
-
-.right-mid{
-  width: 200px;
-  height: 200px;
-  margin-top:100px;
- text-align: right;
- background-color:  #f0f0f0;
-}
-</style>
