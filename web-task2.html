@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>web-task2</title>
+  <style media="screen">
+  .content{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .background-r{
+    width: 400px;
+    height: 400px;
+    background-color: red;
+    display: inline-block;
+    position: absolute;
+  }
+  .background-b{
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+    display: inline-block;
+    position: absolute;
+    left: 400px;
+  }
+  .background-g{
+    width: 400px;
+    height: 400px;
+    background-color: green;
+    display: inline-block;
+    position: absolute;
+    left: 800px;
+  }
+
+  input{
+    display: none;
+    position: absolute;
+    top:200px;
+    left:100px;
+  }
+
+  label{
+    background-color: #FF8686;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 10;
+    padding: 6px 25px 40px 40px;
+    position: relative;
+    top: 200px;
+    left: 100px;
+  }
+
+
+#slider{
+  position:absolute;
+  left:73px;
+  top:187px;
+  width:10%;
+  padding-bottom:10%;
+  z-index: 20;
+  margin:5% 0 0 10%;
+  background:#fff;
+  border-radius:50%;
+}
+
+
+
+#blue ~ .background{
+  position: absolute;
+  left: 0px;
+}
+#green ~ .background{
+  position: absolute;
+  left: -400px;
+}
+
+#red:checked ~ .background{
+  positon: absolute;
+  left: 0px;
+  transition: left 1s ;
+}
+
+
+#blue:checked ~ .background{
+  positon: absolute;
+  left: -400px;
+  transition: left 1s ;
+}
+#green:checked ~ .background{
+  positon: absolute;
+  left: -800px;
+  transition: left 1s ;
+}
+
+#blue:checked ~ #slider{
+  positon: absolute;
+  left: 140px;
+  transition: left 1s ;
+}
+
+#green:checked ~ #slider{
+  positon: absolute;
+  left: 205px;
+  transition: left 1s ;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="content">
+    <input type="radio" id="red" name="color" checked>
+    <label for="red"></label>
+    <input type="radio" id="blue" name="color" >
+    <label for="blue"></label>
+    <input type="radio" id="green" name="color" >
+    <label for="green"></label>
+
+    <div class="background">
+      <div class="background-r" id="b-r"></div><!--
+   --><div class="background-b" id="b-b"></div><!--
+   --><div class="background-g" id="b-g"></div>
+    </div>
+
+    <span id="slider"></span>
+
+  </div>
+</body>
+</html>
