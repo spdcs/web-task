@@ -12,18 +12,17 @@
     position: relative;
     overflow: hidden;
   }
-
   .background-r{
     width: 400px;
     height: 400px;
-    background-color: red;
+    background-color: #FF6565;
     display: inline-block;
     position: absolute;
   }
   .background-b{
     width: 400px;
     height: 400px;
-    background-color: blue;
+    background-color: #5e93ff;
     display: inline-block;
     position: absolute;
     left: 400px;
@@ -31,19 +30,17 @@
   .background-g{
     width: 400px;
     height: 400px;
-    background-color: green;
+    background-color: #24a753;
     display: inline-block;
     position: absolute;
     left: 800px;
   }
-
   input{
     display: none;
     position: absolute;
     top:200px;
     left:100px;
   }
-
   label{
     background-color: rgba(99%, 99%, 99%, 0.2);
     width: 50px;
@@ -55,8 +52,6 @@
     top: 200px;
     left: 100px;
   }
-
-
 #slider{
   position:absolute;
   left:73px;
@@ -68,9 +63,6 @@
   background:#fff;
   border-radius:50%;
 }
-
-
-
 #blue ~ .background{
   position: absolute;
   left: 0px;
@@ -79,14 +71,11 @@
   position: absolute;
   left: -400px;
 }
-
 #red:checked ~ .background{
   positon: absolute;
   left: 0px;
   transition: left 1s ;
 }
-
-
 #blue:checked ~ .background{
   positon: absolute;
   left: -400px;
@@ -97,20 +86,21 @@
   left: -800px;
   transition: left 1s ;
 }
-
+#red:checked ~ #slider{
+  positon: absolute;
+  left: 73px;
+  transition: left 1s ;
+}
 #blue:checked ~ #slider{
   positon: absolute;
   left: 140px;
   transition: left 1s ;
 }
-
 #green:checked ~ #slider{
   positon: absolute;
   left: 205px;
   transition: left 1s ;
 }
-
-
   </style>
 </head>
 <body>
