@@ -7,8 +7,14 @@
   <title>brown！</title>
 </head>
 <style media="screen">
-body{
+
+.containr{
+  width: 600px;
+  height: 600px;
   background-color: #5cadad		;
+  margin: auto;
+  top: 0;
+  bottom: 0;
 }
 .face{
   background-color: #844200		;
@@ -83,18 +89,37 @@ body{
   margin-left: 150px;
 }
 .nose{
-  background-color: #000000	;
-  width: 100px;
-  height: 100px;
-  clip-path: polygon(50% 100%, 0 0, 100% 0);
-  margin-top: 20px;
-  margin-left: 40px;
-  position: absolute;
-
+  width: 60px;
+  height: 60px;
+  /* clip-path: polygon(50% 100%, 0 0, 100% 0); */
+  margin-top: 15px;
+  margin-left: 60px;
+  background: none repeat scroll 0 0 black;
+  -webkit-border-radius: 50px 0 0 0;
+  -moz-border-radius: 50px 0 0 0;
+  border-radius: 50px 0 0 0;
+  transform: rotate(45deg);
 }
+.noseline{
+  background-color: black;
+  width: 15px;
+  height: 60px;
+  margin-top: -10px;
+  margin-left: 82px;
+}
+
+.mouth{
+  background: black;
+  width: 100px;
+  height: 15px;
+  border-radius: 0 0 20px 20px;
+  margin-left: 42px;
+}
+
+
 </style>
 <body>
-
+<div class="containr">
   <div class="outear1">
     <div class="ear1"></div>
   </div>
@@ -106,8 +131,10 @@ body{
     <div class="eye2"></div>
     <div class="noseout">
       <div class="nose"></div>
+      <div class="noseline"></div>
+      <div class="mouth"></div>
     </div>
   </div>
-
+</div>
 </body>
 </html>
