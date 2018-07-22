@@ -2,11 +2,33 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>display-inline</title>
+    <style type="text/css">
+    body>div{
+      border: solid blue;
+    }
+    body>div>div{
+      border: solid red;
+      display: inline;
+      width: 200px;
+      height: 200px;
+    }
+    .box{
+       width: 300px;
+       height: 300px;
+    }
+
+
+
+
+
+    </style>
   </head>
   <body>
-    <div width=300px hight=300px>
-      <div value=display-inline>11111</div>
+    <div class="box">
+      <div class="left-top">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+      </div>
+    </div>
     </div>
   </body>
 </html>
